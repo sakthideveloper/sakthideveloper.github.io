@@ -195,8 +195,10 @@
     <!--//footer-->
 
     <script>
-      $(".apk").click(function () {
-        download();
+      $(document).ready(function () {
+        $(".apk").click(function () {
+          download();
+        });
       });
 
       function download() {
@@ -212,6 +214,7 @@
     </script>
 
     <!-- Javascript -->
+
     <script
       type="text/javascript"
       src="assets/plugins/jquery-3.4.1.min.js"

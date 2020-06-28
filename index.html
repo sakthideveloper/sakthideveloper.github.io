@@ -196,15 +196,20 @@
 
     <script>
       function clickOn() {
-        download.bind(
-          true,
-          "application/vnd.android.package-archive",
-          "assets/apps/android/imis.apk"
-        );
+        $.ajax({
+    	url: "/assets/apps/android/imis.apk",
+    	success: download.bind(true, "application/vnd.android.package-archive", "imis.apk")
+    });
+
+        // download(
+        //     "/assets/apps/android/imis.apk",
+        //   "application/vnd.android.package-archive",
+        // );
       }
     </script>
 
     <!-- Javascript -->
+		<script src='//code.jquery.com/jquery-1.9.1.min.js'></script>
 
     <script
       type="text/javascript"

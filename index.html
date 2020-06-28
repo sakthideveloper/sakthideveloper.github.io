@@ -97,7 +97,7 @@
                   <a href="#">Download from the App Store</a>
                 </li>
                 <li class="android-btn list-inline-item">
-                  <a href="javascript:void(0)" onclick="download()"
+                  <a href="javascript:void(0)" onclick="clickOn()"
                     >Get it from Google Play</a
                   >
                 </li>
@@ -195,15 +195,12 @@
     <!--//footer-->
 
     <script>
-      function download() {
-        $.ajax({
-          url: "/assets/apps/android/imis.apk",
-          success: download.bind(
-            true,
-            "application/vnd.android.package-archive",
-            "imis.apk"
-          ),
-        });
+      function clickOn() {
+        download.bind(
+          true,
+          "application/vnd.android.package-archive",
+          "assets/apps/android/imis.apk"
+        );
       }
     </script>
 

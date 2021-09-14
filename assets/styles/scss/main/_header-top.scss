@@ -1,0 +1,120 @@
+.header-topnav {
+  position: fixed;
+  background: #3d5afe;
+  margin: 0;
+  padding-left: 85px;
+  /* padding: 0; */
+  padding-right: 75px;
+  width: 100%;
+  top: 0;
+  z-index: 999;
+  .container {
+    padding: 0;
+  }
+  .topbar-branding {
+    float: left;
+    height: 48px;
+    padding: 8px;
+    margin: 0 8px;
+    img {
+      height: 100%;
+      width: auto;
+    }
+  }
+  .topnav {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    // background-color: #456EFE;
+    // padding: 0 5.5rem;
+  }
+  .header-topnav-right {
+    float: right;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    padding-right: 0.67rem;
+  }
+}
+
+@media (max-width: 959px) {
+  .header-topnav-right {
+    position: absolute;
+    right: 6px;
+    top: 0;
+  }
+}
+
+[dir="rtl"] {
+  .header-topnav {
+    .topnav {
+      flex-direction: row-reverse;
+    }
+  }
+}
+
+
+
+.bankName{
+  margin-left: 20px;
+  margin-right: 20px;
+}
+// .toolbarButtons{
+//   margin-left: 20px;
+// }
+ .menu-toolbar{
+  width: 1500px;
+  margin-left: -2.3%;
+ }
+ .iconCard{
+  color: #FFFFFF;
+  margin-top: 10px;
+  margin-left: 30%;
+  
+  // padding-top: 10px;
+  // padding-left: 700px;
+  } 
+.profileCard{
+   color: #FFFFFF;
+  //  padding-left: 170px;
+  }
+  .menu-button {
+    transition: 300ms ease-in-out;
+    transform: rotate(90deg);
+    font-size: 14px;
+  }
+  .menu-button.rotated {
+    transform: rotate(180deg);
+  }
+  .submenu {
+    overflow-y: hidden;
+    transition: transform 300ms ease;
+    transform: scaleY(0);
+    transform-origin: top;
+    padding-left: 30px;
+  }
+  .submenu.expanded {
+    transform: scaleY(1);
+  }
+
+  .menu-toolbar1{
+      height: 15px;
+      background-color: #e1e9fa;
+      opacity: 100%;
+      width: 1500px;
+      margin-left: -2.3%;
+  }
+  ::ng-deep .mat-tooltip {
+    background: #e1e9fa!important;
+    font-size: 12px !important;
+    color: #2E67F8 !important;
+    position: absolute !important; 
+    bottom: 15px !important;
+    padding: 0 0;
+   outline: 0px solid transparent;
+    
+  }
+.username{
+  margin-left: 3%;
+  margin-top: 1%;
+}
